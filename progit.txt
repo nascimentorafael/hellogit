@@ -9,10 +9,12 @@
 $ sudo apt-get install git
 
 
+
 # Identity
 
 $ git config --global user.name "Jane Doe"
 $ git config --global user.email janedoe@ex.com
+
 
 
 # Initializing a repo
@@ -21,9 +23,11 @@ $ git add .
 $ git commit -am 'First commit'
 
 
+
 # Cloning a repo
 
 $ git clone https://github.com/nascimentorafael/hellogit.git
+
 
 
 # Status
@@ -31,9 +35,11 @@ $ git clone https://github.com/nascimentorafael/hellogit.git
 $ git status
 
 
+
 # Moving files
 
 $ git rm file_from file_to
+
 
 
 # Log
@@ -46,9 +52,11 @@ $ git log --pretty=format: "%h %s" -- graph
 $ git log --since=2.weeks 
 
 
+
 # Undoing things
 
 $ git commit --amend
+
 
 
 # Showing remotes
@@ -56,32 +64,44 @@ $ git commit --amend
 $ git remote -v
 
 
+
 # Adding remotes
 
 $ git remote add pb https://github.com/nascimentorafael/hellogit.git
+
 
 
 # Listing tags
 
 $ git tag
 
+
+
 # Creating tags
 
 $ git tag -a v1.4 -m 'my version 1.4'
 $ git show v1.4
 
+
+
 # Tagging later
 
 $ git tag -a v1.2 9fsew9f
+
+
 
 # Push tag
 
 $ git push origin v1.5
 $ git push origin --tags
 
+
+
 # Checking out tags
 
 $ git checkout -b version2 v2.0.0
+
+
 
 # Git Aliases
 
@@ -89,4 +109,10 @@ $ git config --global alias.co checkout
 $ git config --global alias.br branch
 $ git config --global alias.ci commit
 $ git config --global alias.st status
+
+
+
+# Git Branch
+
+$ git branch testing
 
